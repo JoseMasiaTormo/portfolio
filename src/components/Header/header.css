@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    height: 850px;
+    background-image: url('../../images/ParallaxBackgroundportfolio1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 1800px) {
+    .header {
+        height: 650px;
+    }
+}
