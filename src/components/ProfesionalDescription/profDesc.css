@@ -1,39 +1,86 @@
-.pd-table {
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
-    margin: 50px;
-    justify-items: center;
+.pd-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  gap: 20px;
 }
 
-.bg-title-square {
-    grid-column: 1;
-    grid-row: 1;
-    background-image: url('../../images/cvFoto.png');
-    background-size: cover;
-    background-position: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1),
-                0 1px 3px rgba(255, 255, 255, 0.08);
-    border: white 2px solid;
+.photo {
+  background-image: url("../../images/cvFoto.png");
+  background-size: cover;
+  background-position: center;
+  width: 250px; /* Aumenta el tamaño */
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1), 0 1px 3px rgba(255, 255, 255, 0.08);
+  margin-right: 100px; /* La mueve más a la izquierda */
 }
 
-.bg-description-square {
-    display: flex;
-    grid-column: 2 / 5;
-    grid-row: 1;
-    background-color: #683e9e;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-right: 20px;
-    padding: 20px;
-    padding-left: 70px;
-    padding-right: 70px;
-    border-radius: 10px;
-    border: white 2px solid;
+.text-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+  max-width: 700px;
+}
+
+.text-content {
+  background-color: #683e9e;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  overflow: hidden;
+  max-width: 0;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.6s ease-out;
+  line-height: 28px;
+}
+
+.text-content.expand {
+  max-width: 800px; /* Ajusta esto según tu diseño */
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.bracket {
+  font-size: 150px;
+  line-height: 1;
+  user-select: none;
+  transition: transform 0.6s ease-out;
+  position: relative;
+  z-index: 1;
+}
+
+.left-brace {
+  transform: translateX(-5px); /* Muy pegada al centro */
+}
+
+.right-brace {
+  transform: translateX(5px);
+}
+
+.left-brace.open {
+  transform: translateX(-50px); /* Se abre bien hacia la izquierda */
+}
+
+.right-brace.open {
+  transform: translateX(50px); /* Se abre bien hacia la derecha */
+}
+
+.animated-text.hidden {
+  display: none;
+}
+
+.animated-text.visible {
+  display: block;
+  white-space: pre-wrap;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
 }

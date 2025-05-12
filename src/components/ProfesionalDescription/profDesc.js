@@ -1,26 +1,50 @@
-import React from 'react';
-import './profDesc.css';
+import React, { useEffect, useState } from "react";
+import "./profDesc.css";
 
-const TitlePD = () => {
-    return <div className='bg-title-square' />
-}
-
-const DescriptionPD = () => {
-    return <div className='bg-description-square'>
-        <p> 
-            Como desarrollador web, tengo experiencia en el Frontend y Backend. Disfruto profundamente del 
-            proceso de desarrollo y tengo un fuerte compromiso con el aprendizaje continuo. Siempre estoy 
-            motivado para ampliar mis conocimientos, ya que creo firmemente que nunca es tarde para adquirir
-            nuevas habilidades, especialmente en el ámbito de la informática y la tecnología.
-        </p>
-    </div>
-}
+const fullText =
+  "·Soy un joven entusiasta de 20 años con una pasión por las nuevas tecnologías y el aprendizaje continuo. Poseo una mentalidad abierta y una determinación inquebrantable para adquirir experiencia laboral en diversos campos, para así poder crecer profesionalmente todo lo que pueda.";
 
 const ProfesionalDesc = () => {
-  return <div className='pd-table'>
-    <TitlePD />
-    <DescriptionPD />
-  </div>;
+  const [textShown, setTextShown] = useState("");
+  const [animateBrackets, setAnimateBrackets] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const triggerPoint = window.innerHeight * 0.5;
+      const element = document.querySelector(".animated-text");
+
+      if (element && element.getBoundingClientRect().top < triggerPoint && !animateBrackets) {
+        setAnimateBrackets(true);
+
+        setTimeout(() => {
+          let index = 0;
+          const interval = setInterval(() => {
+            setTextShown((prev) => prev + fullText.charAt(index));
+            index++;
+            if (index >= fullText.length) clearInterval(interval);
+          }, 15);
+        }, 800);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [animateBrackets]);
+
+  return (
+    <div className="pd-container">
+      <div className="photo" />
+      <div className="text-block">
+        <div className={`bracket left-brace ${animateBrackets ? "open" : ""}`}>{"{"}</div>
+
+        <div className={`text-content ${animateBrackets ? "expand" : ""}`}>
+          <p className={`animated-text ${animateBrackets ? "visible" : "hidden"}`}>{textShown}</p>
+        </div>
+
+        <div className={`bracket right-brace ${animateBrackets ? "open" : ""}`}>{"}"}</div>
+      </div>
+    </div>
+  );
 };
 
 export default ProfesionalDesc;
