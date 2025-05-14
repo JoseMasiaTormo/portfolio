@@ -1,9 +1,34 @@
 .network-container {
   position: relative;
   width: 100%;
-  height: 700px;
-  background-color: #0f0f0f;
+  height: 80vh;
   overflow: hidden;
+}
+
+.network-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/backgrounds/tecs.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: -2;
+}
+
+.network-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .lines-svg {
@@ -17,4 +42,14 @@
 .card-wrapper {
   position: absolute;
   z-index: 1;
+}
+
+.network-title {
+  position: absolute;
+  top: 20px;
+  left: 240px;
+  font-size: 2.3rem;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 300;
+  z-index: 10;
 }
