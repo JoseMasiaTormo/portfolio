@@ -39,3 +39,11 @@
     background-size: cover;
   }
 }
+
+@media (max-width: 640px) {
+  .header {
+    height: 200px;
+    background-position: top;
+    background-size: cover;
+  }
+}
