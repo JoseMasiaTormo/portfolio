@@ -19,3 +19,20 @@ En futuras versiones se incorporarán nuevas tecnologías y mejoras a nivel de d
 ## 🌐 Enlace al portfolio
 
 Puedes visitarlo aquí: [https://josemasia.es](https://josemasia.es)
+
+## ⚙️ Cómo usar
+
+```bash
+# Clona este repositorio
+git clone https://github.com/JoseMasiaTormo/portfolio.git
+
+# Entra en el directorio del proyecto
+cd portfolio
+
+# Instala las dependencias
+npm install
+
+# Inicia la aplicación
+npm start
+
+```
