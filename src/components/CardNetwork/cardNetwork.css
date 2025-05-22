@@ -70,3 +70,69 @@
   padding: 40px 0 0 20px;
   z-index: 10;
 }
+
+/* Grandes pantallas (4K) */
+@media screen and (max-width: 2560px) {
+  .network-container {
+    height: 60vh;
+  }
+  .network-title {
+    font-size: 3.3rem;
+    padding: 40px 0 0 360px;
+  }
+}
+
+/* Pantallas Full HD y menores */
+@media screen and (max-width: 1920px) {
+  .network-container {
+    height: 60vh;
+  }
+  .network-title {
+    font-size: 3rem;
+    padding: 40px 0 0 220px;
+  }
+}
+
+/* Pantallas medianas */
+@media screen and (max-width: 1440px) {
+  .network-container {
+    height: 80vh;
+  }
+  .network-title {
+    font-size: 2.8rem;
+    padding: 40px 0 0 140px;
+  }
+}
+
+/* Tablets grandes */
+@media screen and (max-width: 1024px) {
+  .network-container {
+    height: 90vh;
+  }
+  .network-title {
+    font-size: 2.5rem;
+    padding: 30px 0 0 60px;
+  }
+}
+
+/* Tablets pequeñas y móviles grandes */
+@media screen and (max-width: 768px) {
+  .network-container {
+    height: 100vh;
+  }
+  .network-title {
+    font-size: 2rem;
+    padding: 20px 0 0 30px;
+  }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 480px) {
+  .network-container {
+    height: 110vh;
+  }
+  .network-title {
+    font-size: 1.6rem;
+    padding: 15px 0 0 15px;
+  }
+}
