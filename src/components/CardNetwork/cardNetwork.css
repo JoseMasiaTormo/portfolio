@@ -1,7 +1,7 @@
 .network-container {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 
@@ -31,6 +31,22 @@
   z-index: -1;
 }
 
+.network-graph-scroll {
+  width: 100%;
+  height: calc(100% - 80px);
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.network-graph-inner {
+  position: relative;
+  width: 1700px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 .lines-svg {
   position: absolute;
   width: 100%;
@@ -45,12 +61,12 @@
 }
 
 .network-title {
-  position: absolute;
-  top: 20px;
-  left: 240px;
   font-family: monospace;
   font-size: 2.3rem;
   color: rgba(255, 255, 255, 1);
   font-weight: 300;
+  margin: 0;
+  position: relative;
+  padding: 40px 0 0 20px;
   z-index: 10;
 }

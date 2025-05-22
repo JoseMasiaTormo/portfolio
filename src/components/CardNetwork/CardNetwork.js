@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Card from "../Card/CardComp";
 import "./cardNetwork.css";
 import {
@@ -67,40 +67,57 @@ const connections = [
 ];
 
 const CardNetwork = () => {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (scrollContainer) {
+      const containerWidth = scrollContainer.offsetWidth;
+      const contentWidth = scrollContainer.scrollWidth;
+      const scrollTo = (contentWidth - containerWidth) / 2;
+
+      scrollContainer.scrollLeft = scrollTo;
+    }
+  }, []);
+
   return (
     <div className="network-container">
       <h2 className="network-title">Conocimientos</h2>
-      <svg className="lines-svg">
-        {connections.map(([from, to], idx) => (
-          <line
-            key={idx}
-            x1={cardPositions[from].x + 50}
-            y1={cardPositions[from].y + 50}
-            x2={cardPositions[to].x + 50}
-            y2={cardPositions[to].y + 50}
-            stroke="white"
-            strokeWidth="2"
-            strokeOpacity="0.6"
-          />
-        ))}
-      </svg>
-      {cardPositions.map((pos, index) => (
-        <div
-          key={index}
-          className="card-wrapper"
-          style={{
-            left: `${pos.x}px`,
-            top: `${pos.y}px`,
-          }}
-        >
-          <Card
-            Icon={iconData[index].Icon}
-            image={iconData[index].image}
-            label={iconData[index].label}
-            hoverText={iconData[index].hoverText}
-          />
+      <div className="network-graph-scroll" ref={scrollRef}>
+        <div className="network-graph-inner">
+          <svg className="lines-svg">
+            {connections.map(([from, to], idx) => (
+              <line
+                key={idx}
+                x1={cardPositions[from].x + 50}
+                y1={cardPositions[from].y + 50}
+                x2={cardPositions[to].x + 50}
+                y2={cardPositions[to].y + 50}
+                stroke="white"
+                strokeWidth="2"
+                strokeOpacity="0.6"
+              />
+            ))}
+          </svg>
+          {cardPositions.map((pos, index) => (
+            <div
+              key={index}
+              className="card-wrapper"
+              style={{
+                left: `${pos.x}px`,
+                top: `${pos.y}px`,
+              }}
+            >
+              <Card
+                Icon={iconData[index].Icon}
+                image={iconData[index].image}
+                label={iconData[index].label}
+                hoverText={iconData[index].hoverText}
+              />
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
   );
 };
