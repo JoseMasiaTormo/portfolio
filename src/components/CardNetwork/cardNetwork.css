@@ -74,7 +74,7 @@
 /* Grandes pantallas (4K) */
 @media screen and (max-width: 2560px) {
   .network-container {
-    height: 60vh;
+    height: 65vh;
   }
   .network-title {
     font-size: 3.3rem;
@@ -85,7 +85,7 @@
 /* Pantallas Full HD y menores */
 @media screen and (max-width: 1920px) {
   .network-container {
-    height: 60vh;
+    height: 85vh;
   }
   .network-title {
     font-size: 3rem;
@@ -113,6 +113,9 @@
     font-size: 2.5rem;
     padding: 30px 0 0 60px;
   }
+  .network-graph-inner {
+    width: 1200px;
+  }
 }
 
 /* Tablets pequeñas y móviles grandes */
@@ -124,6 +127,9 @@
     font-size: 2rem;
     padding: 20px 0 0 30px;
   }
+  .network-graph-inner {
+    width: 900px;
+  }
 }
 
 /* Móviles pequeños */
@@ -134,5 +140,8 @@
   .network-title {
     font-size: 1.6rem;
     padding: 15px 0 0 15px;
+  }
+  .network-graph-inner {
+    width: 600px;
   }
 }
