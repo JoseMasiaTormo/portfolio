@@ -75,8 +75,19 @@
   .network-graph-scroll {
     width: 1700px;
     height: 50vh;
-    left: -50px;
-    margin-top: -40px;
+    left: -60px;
+    top: -30px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1920px) {
+  .network-graph-inner,
+  .network-graph-scroll {
+    width: 1700px;
+    height: 70vh;
+    left: -60px;
+    top: -30px;
     margin: 0 auto;
   }
 }
