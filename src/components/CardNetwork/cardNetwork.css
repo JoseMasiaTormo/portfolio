@@ -1,7 +1,6 @@
 .network-container {
   position: relative;
   width: 100%;
-  height: 110vh;
   overflow: hidden;
 }
 
@@ -33,7 +32,8 @@
 
 .network-graph-scroll {
   width: 100%;
-  height: calc(100% - 80px);
+  height: 80vh;
+  margin-top: -40px;
   overflow-x: auto;
   overflow-y: hidden;
   position: relative;
@@ -42,9 +42,9 @@
 
 .network-graph-inner {
   position: relative;
+  margin-top: -40px;
   width: 1700px;
-  height: 100%;
-  margin: 0 auto;
+  height: 80vh;
 }
 
 .lines-svg {
@@ -62,77 +62,21 @@
 
 .network-title {
   font-family: monospace;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   color: rgba(255, 255, 255, 1);
-  font-weight: 300;
-  margin: 0;
+  font-weight: normal;
   position: relative;
-  padding: 40px 0 0 20px;
+  padding: 20px 0 0 100px;
   z-index: 10;
 }
 
-/* Grandes pantallas (4K) */
-@media screen and (max-width: 2560px) {
-  .network-container {
-    height: 65vh;
-  }
-  .network-title {
-    font-size: 3.3rem;
-    padding: 40px 0 0 360px;
-  }
-}
-
-/* Pantallas Full HD y menores */
-@media screen and (max-width: 1920px) {
-  .network-container {
-    height: 85vh;
-  }
-  .network-title {
-    font-size: 3rem;
-    padding: 40px 0 0 220px;
-  }
-}
-
-/* Pantallas medianas */
-@media screen and (max-width: 1440px) {
-  .network-container {
-    height: 80vh;
-  }
-  .network-title {
-    font-size: 2.8rem;
-    padding: 40px 0 0 140px;
-  }
-}
-
-/* Tablets grandes */
-@media screen and (max-width: 1024px) {
-  .network-container {
-    height: 90vh;
-  }
-  .network-title {
-    font-size: 2.5rem;
-    padding: 30px 0 0 60px;
-  }
-}
-
-/* Tablets pequeñas y móviles grandes */
-@media screen and (max-width: 768px) {
-  .network-container {
-    height: 100vh;
-  }
-  .network-title {
-    font-size: 2rem;
-    padding: 20px 0 0 30px;
-  }
-}
-
-/* Móviles pequeños */
-@media screen and (max-width: 480px) {
-  .network-container {
-    height: 110vh;
-  }
-  .network-title {
-    font-size: 1.6rem;
-    padding: 15px 0 0 15px;
+@media (max-width: 2560px) {
+  .network-graph-inner,
+  .network-graph-scroll {
+    width: 1700px;
+    height: 50vh;
+    left: -50px;
+    margin-top: -40px;
+    margin: 0 auto;
   }
 }
