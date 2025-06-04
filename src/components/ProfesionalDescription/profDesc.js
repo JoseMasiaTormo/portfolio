@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./profDesc.css";
 
 const fullText =
-  "·Soy un joven entusiasta de 20 años con una pasión por las nuevas tecnologías y el aprendizaje continuo. Poseo una mentalidad abierta y una determinación inquebrantable para adquirir experiencia laboral en diversos campos, para así poder crecer profesionalmente todo lo que pueda.";
+  "·Soy un joven entusiasta de 20 años con una pasión por las nuevas tecnologías y el aprendizaje continuo. Poseo una mentalidad abierta y una determinación inquebrantable para adquirir experiencia en diversos campos, para así poder crecer profesionalmente todo lo que pueda.";
 
 const ProfesionalDesc = () => {
   const [textShown, setTextShown] = useState("");

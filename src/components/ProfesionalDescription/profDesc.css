@@ -39,7 +39,7 @@
 }
 
 .photo {
-  background-image: url("../../images/cvFoto.png");
+  background-image: url("../../assets/images/cvFoto.png");
   background-size: cover;
   background-position: center;
   width: 250px;
