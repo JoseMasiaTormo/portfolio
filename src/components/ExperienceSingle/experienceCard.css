@@ -55,3 +55,93 @@
   color: #777;
   line-height: 1.4;
 }
+
+@media (max-width: 850px) {
+  .cardExp {
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardExp {
+    height: 360px;
+  }
+}
+
+@media (max-width: 742px) {
+  .cardExp {
+    height: 370px;
+  }
+}
+
+@media (max-width: 723px) {
+  .cardExp {
+    height: 400px;
+  }
+}
+
+@media (max-width: 707px) {
+  .cardExp {
+    height: 450px;
+  }
+}
+
+@media (max-width: 700px) {
+  .cardExp {
+    height: 220px;
+  }
+}
+
+@media (max-width: 691px) {
+  .cardExp {
+    height: 240px;
+  }
+}
+
+@media (max-width: 621px) {
+  .cardExp {
+    height: 260px;
+  }
+}
+
+@media (max-width: 551px) {
+  .cardExp {
+    height: 290px;
+  }
+}
+
+@media (max-width: 489px) {
+  .cardExp {
+    height: 310px;
+  }
+}
+
+@media (max-width: 454px) {
+  .cardExp {
+    height: 330px;
+  }
+}
+
+@media (max-width: 427px) {
+  .cardExp {
+    height: 350px;
+  }
+}
+
+@media (max-width: 401px) {
+  .cardExp {
+    height: 380px;
+  }
+}
+
+@media (max-width: 391px) {
+  .cardExp {
+    height: 430px;
+  }
+}
+
+@media (max-width: 383px) {
+  .cardExp {
+    height: 460px;
+  }
+}
