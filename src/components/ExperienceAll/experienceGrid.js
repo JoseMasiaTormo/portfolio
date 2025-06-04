@@ -6,28 +6,30 @@ import CoolmodLogo from "../../assets/images/coolmod-logo.png";
 
 const ExperienceGrid = () => {
   return (
-    <div className="limits">
-      <div className="experienceGrid">
-        <SingleExperienceCard
-          image={PixelLogo}
-          alt={"PixelCom Logo"}
-          className={"pixel-logo"}
-          description={
-            "Puesto de prácticas como desarrollador front-end haciendo uso de React.js, Docker, Socket.io y otras tecnologías de gestión de datos, a parte de uso de modalidad SCRUM."
-          }
-          title={"PixelCom Ingeniería"}
-          duration={"⌛800Hrs"}
-        />
-        <SingleExperienceCard
-          image={CoolmodLogo}
-          alt={"Coolmod Logo"}
-          className={"coolmod-logo"}
-          description={
-            "Puesto de prácticas alternando entre diferentes puestos, en los que figuran, atención al cliente, montaje de ordenadores y postventa."
-          }
-          title={"Coolmod Informática"}
-          duration={"⌛380Hrs"}
-        />
+    <div className="background">
+      <div className="limits">
+        <div className="experienceGrid">
+          <SingleExperienceCard
+            image={PixelLogo}
+            alt={"PixelCom Logo"}
+            className={"pixel-logo"}
+            description={
+              "Puesto de prácticas como desarrollador front-end haciendo uso de frameworks como React.js en un entorno Cliente-Servidor y otras tecnologías como Docker y Socket.io o utilidades como Git, GitHub Actions y metodologías SCRUM. Aquí desarrollé algunos componentes gráficos y también ayudé en la corrección de algunos errores."
+            }
+            title={"PixelCom Ingeniería"}
+            duration={"⌛800Hrs"}
+          />
+          <SingleExperienceCard
+            image={CoolmodLogo}
+            alt={"Coolmod Logo"}
+            className={"coolmod-logo"}
+            description={
+              "Puesto de prácticas alternando entre diferentes sectores dentro de la compañía, en los que figuran, atención al cliente donde destacan el soporte y el uso de Microsoft Navision, montaje de ordenadores y postventa donde también hice uso de Excel."
+            }
+            title={"Coolmod Informática"}
+            duration={"⌛380Hrs"}
+          />
+        </div>
       </div>
     </div>
   );

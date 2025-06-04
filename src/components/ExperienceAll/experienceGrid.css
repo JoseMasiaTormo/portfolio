@@ -3,6 +3,17 @@
   margin: 0 auto;
 }
 
+.background {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url("../../assets/backgrounds/techback.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: -2;
+}
+
 .experienceGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));

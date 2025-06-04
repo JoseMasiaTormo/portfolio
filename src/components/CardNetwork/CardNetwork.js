@@ -82,7 +82,6 @@ const CardNetwork = () => {
 
   return (
     <div className="network-container">
-      <h2 className="network-title">Conocimientos</h2>
       <div className="network-graph-scroll" ref={scrollRef}>
         <div className="network-graph-inner">
           <svg className="lines-svg">

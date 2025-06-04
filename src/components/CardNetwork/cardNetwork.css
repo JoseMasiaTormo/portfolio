@@ -61,16 +61,6 @@
   z-index: 1;
 }
 
-.network-title {
-  font-family: monospace;
-  font-size: 2.5rem;
-  color: rgba(255, 255, 255, 1);
-  font-weight: normal;
-  position: relative;
-  padding: 20px 0 0 100px;
-  z-index: 10;
-}
-
 @media (max-width: 2560px) {
   .network-graph-inner,
   .network-graph-scroll {
@@ -175,11 +165,6 @@
     top: -40px;
     margin: 0 auto;
   }
-
-  .network-title {
-    font-size: 2rem;
-    padding-left: 40px;
-  }
 }
 
 @media (max-width: 415px) {
@@ -193,11 +178,6 @@
     left: -80px;
     top: -40px;
     margin: 0 auto;
-  }
-
-  .network-title {
-    font-size: 2rem;
-    padding-left: 40px;
   }
 }
 
@@ -213,11 +193,6 @@
     top: -40px;
     margin: 0 auto;
   }
-
-  .network-title {
-    font-size: 2rem;
-    padding-left: 40px;
-  }
 }
 
 @media (max-width: 360px) {
@@ -231,10 +206,5 @@
     left: -80px;
     top: -40px;
     margin: 0 auto;
-  }
-
-  .network-title {
-    font-size: 2rem;
-    padding-left: 40px;
   }
 }
