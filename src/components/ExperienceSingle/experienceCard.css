@@ -1,147 +1,71 @@
 .cardExp {
-  position: relative;
+  max-width: 500px;
+  border-radius: 0.5rem;
+  background-color: #141414;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 1);
+  border: 1px solid transparent;
+}
+
+.cardExp a {
+  text-decoration: none;
+}
+
+.contentExp {
+  padding: 1.1rem;
+}
+
+.imageExpPixel {
+  object-fit: cover;
   width: 100%;
-  height: 200px;
-  background: linear-gradient(-45deg, #cf86ff 0%, #6f00ff 100%);
-  border-radius: 10px;
-  display: flex;
+  height: 150px;
+  background-image: url("../../assets/images/pixel-logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.imageExpCoolmod {
+  width: 100%;
+  height: 150px;
+  background-image: url("../../assets/images/coolmod-logo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.titleExp {
+  color: #cfcfcf;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.descExp {
+  margin-top: 0.5rem;
+  color: #bdbdbd;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.actionExp {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #afafaf;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  gap: 0.25rem;
+  background-color: #3f0086;
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 1);
 }
 
-.cardExp:hover {
-  box-shadow: 0px 0px 30px 1px rgba(204, 75, 255, 0.3);
+.actionExp span {
+  transition: 0.3s ease;
 }
 
-.card__content {
-  font-family: monospace;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: #eec9ff;
-  opacity: 0;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.cardExp:hover .card__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
-}
-
-.card__title {
-  margin: 0;
-  font-size: 26px;
-  color: #333;
-  font-weight: 700;
-}
-
-.card__description {
-  margin: 10px 0 0;
-  font-size: 16px;
-  color: #777;
-  line-height: 1.4;
-}
-
-.card__duration {
-  margin: 10px 0 0;
-  font-size: 16px;
-  color: #777;
-  line-height: 1.4;
-}
-
-@media (max-width: 850px) {
-  .cardExp {
-    height: 220px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cardExp {
-    height: 360px;
-  }
-}
-
-@media (max-width: 742px) {
-  .cardExp {
-    height: 370px;
-  }
-}
-
-@media (max-width: 723px) {
-  .cardExp {
-    height: 400px;
-  }
-}
-
-@media (max-width: 707px) {
-  .cardExp {
-    height: 450px;
-  }
-}
-
-@media (max-width: 700px) {
-  .cardExp {
-    height: 220px;
-  }
-}
-
-@media (max-width: 691px) {
-  .cardExp {
-    height: 240px;
-  }
-}
-
-@media (max-width: 621px) {
-  .cardExp {
-    height: 260px;
-  }
-}
-
-@media (max-width: 551px) {
-  .cardExp {
-    height: 290px;
-  }
-}
-
-@media (max-width: 489px) {
-  .cardExp {
-    height: 310px;
-  }
-}
-
-@media (max-width: 454px) {
-  .cardExp {
-    height: 330px;
-  }
-}
-
-@media (max-width: 427px) {
-  .cardExp {
-    height: 350px;
-  }
-}
-
-@media (max-width: 401px) {
-  .cardExp {
-    height: 380px;
-  }
-}
-
-@media (max-width: 391px) {
-  .cardExp {
-    height: 430px;
-  }
-}
-
-@media (max-width: 383px) {
-  .cardExp {
-    height: 460px;
-  }
+.actionExp:hover span {
+  transform: translateX(4px);
 }

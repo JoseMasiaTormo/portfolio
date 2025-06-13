@@ -1,14 +1,17 @@
 import React from "react";
 import "./experienceCard.css";
 
-const SingleExperienceCard = ({ image, description, className, alt, title, duration }) => {
+const SingleExperienceCard = ({ description, title, link, classImage }) => {
   return (
     <div class="cardExp">
-      <img src={image} alt={alt} className={className} />
-      <div class="card__content">
-        <p class="card__title">{title}</p>
-        <p class="card__description">{description}</p>
-        <p class="card__duration">{duration}</p>
+      <div class={classImage}></div>
+      <div class="contentExp">
+        <span class="titleExp">{title}</span>
+        <p class="descExp">{description}</p>
+        <a class="actionExp" href={link}>
+          Más
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
     </div>
   );
