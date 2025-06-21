@@ -1,0 +1,32 @@
+.dband {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(66, 0, 128, 0.699);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.dband-track {
+  display: flex;
+  width: fit-content;
+  animation: marquee 10s linear infinite;
+}
+
+.dband p {
+  font-size: 150%;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  padding-right: 2rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
