@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 850px;
+  height: min(100vh, 850px);
   background-image: url("../../assets/images/ParallaxBackgroundportfolio1.png");
   background-size: cover;
   background-position: center;
@@ -9,38 +9,38 @@
 
 @media (max-width: 2600px) {
   .header {
-    height: 1150px;
+    height: min(100vh, 1150px);
   }
 }
 
 @media (max-width: 1920px) {
   .header {
-    height: 800px;
+    height: min(90vh, 800px);
   }
 }
 
 @media (max-width: 1350px) {
   .header {
-    height: 550px;
+    height: min(80vh, 550px);
   }
 }
 
 @media (max-width: 1150px) {
   .header {
-    height: 450px;
+    height: min(70vh, 450px);
   }
 }
 
 @media (max-width: 940px) {
   .header {
-    height: 400px;
+    height: min(60vh, 400px);
     background-position: top;
   }
 }
 
 @media (max-width: 850px) {
   .header {
-    height: 300px;
+    height: min(50vh, 300px);
     background-position: top;
     background-size: cover;
   }
@@ -48,7 +48,7 @@
 
 @media (max-width: 640px) {
   .header {
-    height: 200px;
+    height: min(40vh, 200px);
     background-position: top;
     background-size: cover;
   }
