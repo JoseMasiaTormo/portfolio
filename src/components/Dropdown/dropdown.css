@@ -1,0 +1,99 @@
+.containerDrop {
+  width: 100%;
+  max-width: 100%;
+  background: linear-gradient(to right, #001230, #6d2eff);
+  color: white;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  font-family: monospace;
+}
+
+.headerDrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.logoTitleDrop {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logoDrop {
+  width: 100px;
+  height: 100px;
+}
+
+.titleDrop {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.iconDrop {
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+.contentDrop {
+  margin-top: 24px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.imagesDrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.imagesDrop img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.linkDrop {
+  color: white;
+  text-decoration: none;
+}
+
+#KCPPMov,
+#KCCarrMov {
+  max-width: 100%;
+  width: 180px;
+  border-radius: 30px;
+  height: auto;
+}
+
+#KCPPPC {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+
+#TSP1,
+#TSP2,
+#TSP3 {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+}

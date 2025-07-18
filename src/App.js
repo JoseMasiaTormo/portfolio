@@ -1,5 +1,6 @@
 import "./App.css";
 import CardNetwork from "./components/CardNetwork/CardNetwork";
+import DropDownG from "./components/Dropdown/DropDownG";
 import DynamicBand from "./components/DynamicBand/dband";
 import ExperienceGrid from "./components/ExperienceAll/experienceGrid";
 import Header from "./components/Header/header";
@@ -16,6 +17,8 @@ function App() {
       <CardNetwork />
       <div className="separator"></div>
       <ExperienceGrid />
+      <div className="separator"></div>
+      <DropDownG />
     </>
   );
 }
