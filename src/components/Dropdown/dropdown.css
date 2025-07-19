@@ -1,10 +1,10 @@
 .containerDrop {
   width: 100%;
   max-width: 100%;
-  background: linear-gradient(to right, #001230, #6d2eff);
+  background: linear-gradient(to right, #001230, #61095a);
   color: white;
   box-sizing: border-box;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   padding: 24px;
   transition: all 0.4s ease;
   overflow: hidden;
@@ -76,6 +76,50 @@
   text-decoration: none;
 }
 
+.contentDropWrapper {
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.contentDrop {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.5s ease, opacity 1.5s ease;
+}
+
+.contentDrop.open {
+  opacity: 1;
+  max-height: fit-content;
+}
+
+.contentDrop.closed {
+  opacity: 0;
+  max-height: 0;
+}
+
+.techList {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.techItem {
+  display: inline;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgb(44, 44, 44);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  border: #6d2eff solid 1px;
+}
+
 #KCPPMov,
 #KCCarrMov {
   max-width: 100%;
@@ -96,4 +140,9 @@
   width: 600px;
   max-width: 100%;
   height: auto;
+}
+
+#TSP {
+  width: 70px;
+  height: 70px;
 }

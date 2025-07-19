@@ -31,6 +31,7 @@ const DropDownG = () => {
         link={
           "https://www.figma.com/design/K7YEAR85ubF7qU2be5yLIb/Dise%C3%B1o-Final?node-id=1669-162202&m=dev&t=jBp77qW7SqBMmEVp-1"
         }
+        techs={["Figma"]}
       />
       <Dropdown
         logo={logoPixel}
@@ -45,6 +46,19 @@ const DropDownG = () => {
         imgAlt2={"TV2"}
         imgAlt3={"TV3"}
         link={"https://pixelcom.es/grafismo-tv"}
+        techs={[
+          "React",
+          "TypeScript",
+          "Node.js",
+          "Storybook",
+          "AWS",
+          "DynamoDB",
+          "Socket.io",
+          "Docker",
+          "Flux",
+          "Jest",
+          "Github Actions",
+        ]}
       />
       <Dropdown
         logo={logoTSP}
@@ -59,6 +73,8 @@ const DropDownG = () => {
         imgAlt2={"TSP2"}
         imgAlt3={"TSP3"}
         link={"https://github.com/JoseMasiaTormo/TSP-SOLUCIONES-PROJECT"}
+        logoName={"TSP"}
+        techs={["HTML", "CSS", "JavaScript", "PHP", "MySQL"]}
       />
     </div>
   );
