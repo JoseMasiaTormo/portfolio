@@ -120,15 +120,15 @@
   border: #6d2eff solid 1px;
 }
 
-#KCPPMov,
-#KCCarrMov {
+#KCPPMov {
   max-width: 100%;
-  width: 180px;
+  width: 200px;
   border-radius: 30px;
   height: auto;
 }
 
-#KCPPPC {
+#KCPPPC,
+#KCCarrPC {
   width: 600px;
   max-width: 100%;
   height: auto;

@@ -4,8 +4,8 @@ import logoKCs from "../../assets/images/logoKCs.png";
 import logoPixel from "../../assets/images/pixel-logo.png";
 import logoTSP from "../../assets/images/informacion.png";
 import KCPPPC from "../../assets/images/PPPC.png";
+import KCCarrPC from "../../assets/images/carritoPC.png";
 import KCPPMov from "../../assets/images/PPMov.png";
-import KCCarrMov from "../../assets/images/carritoMov.png";
 import TV1 from "../../assets/images/tv-graphics1.png";
 import TV2 from "../../assets/images/tv-graphics2.png";
 import TV3 from "../../assets/images/tv-graphics3.png";
@@ -23,11 +23,11 @@ const DropDownG = () => {
           "Proyecto personal de del Grado Superior, es un concepto de proyecto, y los diseños se han hecho todos con Figma."
         }
         image1={KCPPPC}
-        image2={KCPPMov}
-        image3={KCCarrMov}
+        image2={KCCarrPC}
+        image3={KCPPMov}
         imgAlt1={"KCPPPC"}
-        imgAlt2={"KCPPMov"}
-        imgAlt3={"KCCarrMov"}
+        imgAlt2={"KCCarrPC"}
+        imgAlt3={"KCPPMov"}
         link={
           "https://www.figma.com/design/K7YEAR85ubF7qU2be5yLIb/Dise%C3%B1o-Final?node-id=1669-162202&m=dev&t=jBp77qW7SqBMmEVp-1"
         }
