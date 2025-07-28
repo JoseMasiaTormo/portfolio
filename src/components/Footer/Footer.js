@@ -1,16 +1,12 @@
 import React from "react";
-import "./profDesc.css";
+import "./footer.css";
 import { handleCopyEmail } from "../../utils/copyEmail";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-const ProfesionalDesc = () => {
-  const textShown =
-    "Soy desarrollador Full Stack Junior, lo que en mi caso significa, poca experiencia pero un gran entusiasmo por aprender lo máximo posible de las tecnologías actuales y de las nuevas.";
-
+const FooterComp = () => {
   return (
-    <div className="pd-container">
-      <div className="photo" />
-      <div className="text-block">
+    <div>
+      <div className="footerComp">
         <div className="social-bubbles">
           <a href="https://github.com/JoseMasiaTormo" target="_blank" rel="noopener noreferrer">
             <FaGithub />
@@ -23,13 +19,11 @@ const ProfesionalDesc = () => {
             <FaEnvelope />
           </button>
         </div>
-
-        <div className={`text-content`}>
-          <p className={`animated-text visible`}>{textShown}</p>
-        </div>
+        <p>© 2025 Fco Jose Masià Tormo</p>
+        <p>Esta web está en continuo desarrollo</p>
       </div>
     </div>
   );
 };
 
-export default ProfesionalDesc;
+export default FooterComp;
