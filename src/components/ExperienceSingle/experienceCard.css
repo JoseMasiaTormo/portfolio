@@ -49,7 +49,6 @@
 
 .actionExp {
   display: inline-flex;
-  margin-top: 1rem;
   color: #afafaf;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -68,4 +67,26 @@
 
 .actionExp:hover span {
   transform: translateX(4px);
+}
+
+.techListExp {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.techItemExp {
+  display: inline;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  background-color: rgb(44, 44, 44);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: #6d2eff solid 1px;
 }

@@ -8,17 +8,32 @@ const ExperienceGrid = () => {
       <div className="limits">
         <div className="experienceGrid">
           <SingleExperienceCard
-            description={
-              "Puesto de prácticas como desarrollador full-stack haciendo uso de frameworks como React.js en un entorno Cliente-Servidor y otras tecnologías como Docker y Socket.io o utilidades como Git, GitHub Actions y metodologías SCRUM además de CI/CD. Aquí desarrollé algunos componentes gráficos y también ayudé en la corrección de algunos errores."
-            }
+            techsExp={[
+              "React",
+              "TypeScript",
+              "Node.js",
+              "Storybook",
+              "AWS",
+              "DynamoDB",
+              "Socket.io",
+              "Docker",
+              "Flux",
+              "Jest",
+              "Github Actions",
+            ]}
             title={"PixelCom Ingeniería"}
             link={"https://pixelcom.es"}
             classImage={"imageExpPixel"}
           />
           <SingleExperienceCard
-            description={
-              "Puesto de prácticas alternando entre diferentes sectores dentro de la compañía, en los que figuran, atención al cliente donde destacan el soporte y el uso de Microsoft Navision, montaje de ordenadores y postventa donde también hice uso de Excel."
-            }
+            techsExp={[
+              "Microsoft Dynamics",
+              "Atención al Cliente",
+              "Excel",
+              "Postventa",
+              "Reparación de equipos",
+              "Montaje de ordenadores",
+            ]}
             title={"Coolmod Informática"}
             link={"https://coolmod.com"}
             classImage={"imageExpCoolmod"}

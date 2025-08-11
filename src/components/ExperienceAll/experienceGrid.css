@@ -15,14 +15,9 @@
 }
 
 .experienceGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   padding: 40px;
-}
-
-@media (max-width: 768px) {
-  .experienceGrid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
 }
