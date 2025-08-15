@@ -1,3 +1,7 @@
+.background-skills {
+  background: linear-gradient(to right, #001230, #3f177f);
+}
+
 .skills-all {
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +12,7 @@
 .titleGroup {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   padding: 0;
   margin: 20px;
