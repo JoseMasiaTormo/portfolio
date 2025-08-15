@@ -1,10 +1,10 @@
 import "./App.css";
-import CardNetwork from "./components/CardNetwork/CardNetwork";
 import DropDownG from "./components/Dropdown/DropDownG";
 import ExperienceGrid from "./components/ExperienceAll/experienceGrid";
 import FooterComp from "./components/Footer/Footer";
 import Header from "./components/Header/header";
 import ProfesionalDesc from "./components/ProfesionalDescription/profDesc";
+import SkillsGroup from "./components/SkillsGroup/SkillsGroup";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <div className="separator"></div>
       <ProfesionalDesc />
       <div className="separator"></div>
-      <CardNetwork />
+      <SkillsGroup />
       <div className="separator"></div>
       <ExperienceGrid />
       <div className="separator"></div>

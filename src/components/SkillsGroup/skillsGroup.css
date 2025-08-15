@@ -1,0 +1,40 @@
+.skills-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 20px;
+  font-family: monospace;
+  font-size: 25px;
+}
+
+.titleGroup h1 {
+  margin: 10px 0;
+}
+
+.highlight-stack {
+  color: #6d2eff;
+  font-weight: bold;
+}
+
+@media (max-width: 1150px) {
+  .titleGroup {
+    order: -1;
+    margin: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .skills-all {
+    gap: 0px;
+  }
+}
