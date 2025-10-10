@@ -1,25 +1,24 @@
-import "./App.css";
 import DropDownG from "./components/Dropdown/DropDownG";
 import ExperienceGrid from "./components/ExperienceAll/experienceGrid";
 import FooterComp from "./components/Footer/Footer";
-import Header from "./components/Header/header";
 import ProfesionalDesc from "./components/ProfesionalDescription/profDesc";
 import SkillsGroup from "./components/SkillsGroup/SkillsGroup";
 
 function App() {
+  const separatorClass = "w-[100%] border border-0.5 border-solid border-[#ccc]";
   return (
     <>
-      <Header />
-      <div className="separator"></div>
-      <ProfesionalDesc />
-      <div className="separator"></div>
-      <SkillsGroup />
-      <div className="separator"></div>
-      <ExperienceGrid />
-      <div className="separator"></div>
-      <DropDownG />
-      <div className="separator"></div>
-      <FooterComp />
+      <body className="text-[#eaeaea] h-full">
+        <ProfesionalDesc />
+        <div className={separatorClass}></div>
+        <SkillsGroup />
+        <div className={separatorClass}></div>
+        <ExperienceGrid />
+        <div className={separatorClass}></div>
+        <DropDownG />
+        <div className={separatorClass}></div>
+        <FooterComp />
+      </body>
     </>
   );
 }
