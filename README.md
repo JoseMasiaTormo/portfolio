@@ -13,6 +13,7 @@ A medida que avance en mi carrera y amplíe mis conocimientos, iré actualizando
 Actualmente, el portfolio está desarrollado con:
 
 - **React.js**
+- **Tailwind CSS**
 
 En futuras versiones se incorporarán nuevas tecnologías y mejoras a nivel de diseño y funcionalidad.
 
