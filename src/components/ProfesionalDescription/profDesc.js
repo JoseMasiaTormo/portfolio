@@ -3,27 +3,32 @@ import { handleCopyEmail } from "../../utils/copyEmail";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const ProfesionalDesc = () => {
-  const textShown =
-    "Soy desarrollador Full Stack Junior, lo que en mi caso significa, poca experiencia pero un gran entusiasmo por aprender lo máximo posible de las tecnologías actuales y de las nuevas.";
-
   const aBubblesStyles =
     "bg-black border-none rounded-full p-3 text-white cursor-pointer transition-colors transition-transform duration-300 ease-in-out hover:scale-110 text-[25px]";
 
   const tooltipStyles =
-    "absolute bottom-full left-1/2 mb-2 -translate-x-1/2 bg-[#33333317] text-white text-sm px-3 py-1.5 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible whitespace-nowrap transition-opacity duration-300 z-10";
+    "absolute left-1/2 -translate-x-1/2 bg-[#33333317] text-white text-sm px-3 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible whitespace-nowrap transition-opacity duration-300 z-10 top-full";
 
   return (
-    <div className="w-full h-full bg-[url('./assets/backgrounds/dot_bg.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="flex flex-col p-5 font-mono">
-        <h1 className="text-7xl font-extrabold">FCO JOSE MASIÀ TORMO</h1>
-        <ul className="text-xl pt-5 pl-5 font-bold list-disc leading-relaxed">
+    <div className="w-full h-full bg-[url('./assets/backgrounds/dot_bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed">
+      <div className="flex flex-col p-7 font-mono lg:ml-7 lg:pt-10 xl:flex-row xl:justify-center xl:gap-28 xl:p-12 xl:m-0">
+        <h1 className="flex flex-col text-7xl font-extrabold xl:w-fit">
+          <div className="flex flex-col md:flex-row md:gap-7 xl:flex-col xl:gap-0">
+            <span>FCO</span>
+            <span>JOSÉ</span>
+          </div>
+          <div className="flex flex-col md:flex-row md:gap-7 xl:flex-col xl:gap-0">
+            <span>MASIÁ</span>
+            <span>TORMO</span>
+          </div>
+        </h1>
+        <ul className="text-xl pt-5 pl-5 font-bold list-disc leading-relaxed md:text-3xl xl:list-none xl:items-center xl:justify-center xl:flex xl:flex-col xl:p-0">
           <li>DESARROLLO FULL STACK</li>
           <li>DISEÑO DE INTERFACES</li>
           <li>ESPECIALISTA EN IA Y BIG DATA</li>
           <li>TÉCNICO INFORMÁTICO</li>
         </ul>
-        <p className="text-lg pt-5 leading-relaxed">{textShown}</p>
-        <div className="flex gap-4 justify-start pt-4">
+        <div className="flex gap-4 justify-start pt-4 xl:flex-col xl:items-center xl:justify-center xl:p-0">
           <a
             href="https://github.com/JoseMasiaTormo"
             target="_blank"
