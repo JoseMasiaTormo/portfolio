@@ -1,5 +1,5 @@
 import React from "react";
-import SkillsPart from "../SkillsPart/SkillsPart";
+import SkillsPart from "./SkillsPart";
 import { FaCode } from "react-icons/fa6";
 import { IoMdSettings } from "react-icons/io";
 import { FaDatabase } from "react-icons/fa";

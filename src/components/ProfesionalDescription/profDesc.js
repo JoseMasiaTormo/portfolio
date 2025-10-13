@@ -1,14 +1,10 @@
 import React from "react";
-import { handleCopyEmail } from "../../utils/copyEmail";
+import { handleCopyEmail } from "../../utils/functions";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { aBubblesStyles } from "../../utils/styles";
+import { tooltipStyles } from "../../utils/styles";
 
 const ProfesionalDesc = () => {
-  const aBubblesStyles =
-    "bg-black border-none rounded-full p-3 text-white cursor-pointer transition-colors transition-transform duration-300 ease-in-out hover:scale-110 text-[25px]";
-
-  const tooltipStyles =
-    "absolute left-1/2 -translate-x-1/2 bg-[#33333317] text-white text-sm px-3 rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible whitespace-nowrap transition-opacity duration-300 z-10 top-full";
-
   return (
     <div className="w-full h-full bg-black bg-[radial-gradient(circle,_#ffffff_1.5px,_transparent_1.5px)] bg-[length:40px_40px] bg-[position:0_0,20px_20px] bg-repeat">
       <div className="flex flex-col p-7 font-glitch lg:ml-7 lg:pt-10 xl:flex-row xl:justify-center xl:gap-28 xl:p-12 xl:m-0">

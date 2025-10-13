@@ -1,8 +1,8 @@
 import DropDownG from "./components/Dropdown/DropDownG";
-import ExperienceGrid from "./components/ExperienceAll/experienceGrid";
+import ExperienceGrid from "./components/Experience/experienceGrid";
 import FooterComp from "./components/Footer/Footer";
 import ProfesionalDesc from "./components/ProfesionalDescription/profDesc";
-import SkillsGroup from "./components/SkillsGroup/SkillsGroup";
+import SkillsGroup from "./components/Skills/SkillsGroup";
 
 function App() {
   const separatorClass = "w-[100%] border border-1.5 border-solid border-black";
