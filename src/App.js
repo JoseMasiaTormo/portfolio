@@ -5,18 +5,16 @@ import ProfesionalDesc from "./components/ProfesionalDescription/profDesc";
 import SkillsGroup from "./components/SkillsGroup/SkillsGroup";
 
 function App() {
-  const separatorClass = "w-[100%] border border-0.5 border-solid border-[#ccc]";
+  const separatorClass = "w-[100%] border border-1.5 border-solid border-black";
   return (
     <>
       <body className="text-[#eaeaea] h-full">
         <ProfesionalDesc />
-        <div className={separatorClass}></div>
         <SkillsGroup />
         <div className={separatorClass}></div>
         <ExperienceGrid />
         <div className={separatorClass}></div>
         <DropDownG />
-        <div className={separatorClass}></div>
         <FooterComp />
       </body>
     </>

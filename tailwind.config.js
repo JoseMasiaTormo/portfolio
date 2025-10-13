@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        glitch: ["GlitchGoblin", "sans-serif"],
+      },
+    },
   },
   plugins: [require("tailwindcss-pseudo-elements")],
 };

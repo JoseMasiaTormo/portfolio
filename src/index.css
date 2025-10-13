@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "GlitchGoblin";
+  src: url("./assets/fonts/glitch_goblin/GlitchGoblin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
