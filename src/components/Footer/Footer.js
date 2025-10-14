@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const FooterComp = () => {
   return (
-    <footer className="flex flex-wrap justify-center items-center w-full bg-[#2b2b2b] p-3 text-center gap-5 overflow-hidden box-border">
+    <footer className="flex flex-wrap justify-center items-center w-full bg-black bg-[radial-gradient(circle,_#ffffff_1.5px,_transparent_1.5px)] bg-[length:40px_40px] bg-[position:0_0,20px_20px] bg-repeat p-3 text-center gap-5 overflow-hidden box-border">
       <div className="flex justify-center gap-[15px] mt-[10px]">
         <a
           href="https://github.com/JoseMasiaTormo"

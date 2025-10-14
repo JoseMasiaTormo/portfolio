@@ -21,25 +21,26 @@ export default function Dropdown({
   const imgDrop = "max-w-full h-auto rounded-[12px] shadow-[0_2px_8px_rgba(0,0,0,0.3)] object-cover block mx-[10px]";
 
   const customImgStyles = {
-    KCPPMov: "max-w-[200px] rounded-[30px] w-full h-auto",
+    KCPPMov: "max-w-[200px] rounded-[30px] w-[200px] h-auto",
     KCPPPC: "max-w-full w-[600px] h-auto",
     KCCarrPC: "max-w-full w-[600px] h-auto",
     TSP1: "max-w-full w-[600px] h-auto",
     TSP2: "max-w-full w-[600px] h-auto",
     TSP3: "max-w-full w-[600px] h-auto",
     TSP: "w-[70px] h-[70px]",
+    PIXEL: "w-[80px] h-[55px]",
   };
 
-  const getImgClasses = (id) => `${imgDrop} ${customImgStyles[id] || ""}`;
+  const getImgClasses = (id) => `${customImgStyles[id] || ""}`;
 
   return (
-    <div className="w-full max-w-full bg-[linear-gradient(to_right,#001230,#61095a)] text-white box-border shadow-[0_4px_10px_rgba(0,0,0,0.4)] p-6 pb-0 transition-all duration-[400] ease-in-out overflow-hidden">
+    <div className="w-full max-w-full bg-[linear-gradient(to_bottom,black,#61095a,black)] text-white box-border shadow-[0_4px_10px_rgba(0,0,0,0.4)] p-6 pb-0 transition-all duration-[400] ease-in-out overflow-hidden">
       <div
         className="flex items-center justify-center cursor-pointer font-glitch tracking-[0.2em]"
         onClick={toggleDropdown}
       >
         <div className="flex items-center gap-4">
-          <img src={logo} alt="Logo" className="w-24 h-24" id={logoName} />
+          <img src={logo} alt="Logo" className={`${getImgClasses(`${logoName}`)} w-24 h-24 border-none`} />
           <h2 className="text-3xl font-semibold m-0">{title}</h2>
         </div>
         <div className="text-2xl pl-3 min-[380px]:flex hidden ">{isOpen ? " ▲" : " ▼"}</div>
@@ -69,9 +70,9 @@ export default function Dropdown({
             Ir al proyecto ⛓️‍💥
           </a>
           <div className="flex flex-wrap justify-center items-center my-4 gap-5">
-            <img src={image2} alt={imgAlt2} id={imgAlt2} className={getImgClasses(imgAlt2)} />
-            <img src={image3} alt={imgAlt3} id={imgAlt3} className={getImgClasses(imgAlt3)} />
-            <img src={image1} alt={imgAlt1} id={imgAlt1} className={getImgClasses(imgAlt1)} />
+            <img src={image2} alt={imgAlt2} id={imgAlt2} className={`${imgDrop} ${getImgClasses(imgAlt2)}`} />
+            <img src={image3} alt={imgAlt3} id={imgAlt3} className={`${imgDrop} ${getImgClasses(imgAlt3)}`} />
+            <img src={image1} alt={imgAlt1} id={imgAlt1} className={`${imgDrop} ${getImgClasses(imgAlt1)}`} />
           </div>
         </div>
       </div>

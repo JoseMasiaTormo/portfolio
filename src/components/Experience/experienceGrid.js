@@ -3,11 +3,11 @@ import SingleExperienceCard from "./experienceCard";
 
 const ExperienceGrid = () => {
   const imageExpPixel =
-    "object-cover w-full h-[200px] bg-[url('./assets/images/pixel-logo2.png')] bg-[250px] bg-center bg-no-repeat";
+    "object-cover w-full h-[200px] bg-[url('./assets/images/pixel-logo.png')] bg-center bg-no-repeat";
   const imageExpCoolmod =
-    "object-cover w-full h-[200px] bg-[url('./assets/images/coolmod-logo.png')] bg-[250px] bg-center bg-no-repeat";
+    "object-cover w-full h-[200px] bg-[url('./assets/images/coolmod-logo.png')] bg-center bg-no-repeat";
   return (
-    <div className="bg-[linear-gradient(to_right,rgba(0,0,0,0.7),rgba(0,0,0,0)),url('./assets/backgrounds/techback.jpg')] bg-cover bg-center bg-no-repeat bg-fixed opacity-100 z-[-2]">
+    <div className="bg-[linear-gradient(to_bottom,_#4f177f_30%,_black_100%)] opacity-100 z-[-2]">
       <div className="max-w-[1200px] m-auto">
         <div className="flex flex-wrap justify-center gap-5 p-10">
           <SingleExperienceCard

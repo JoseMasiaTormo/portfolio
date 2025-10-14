@@ -59,6 +59,7 @@ const DropDownG = () => {
           "Jest",
           "Github Actions",
         ]}
+        logoName={"PIXEL"}
       />
       <Dropdown
         logo={logoTSP}
