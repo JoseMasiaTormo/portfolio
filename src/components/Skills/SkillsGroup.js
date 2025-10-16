@@ -13,7 +13,7 @@ const SkillsGroup = () => {
           <div>
             <SkillsPart
               title="Frontend"
-              skillsTechs={["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular"]}
+              skillsTechs={["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular", "Tailwind"]}
               iconSkill={<FaCode />}
             />
             <SkillsPart
