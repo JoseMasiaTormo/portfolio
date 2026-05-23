@@ -33,7 +33,6 @@ const FooterComp = () => {
         </button>
       </div>
       <p className="text-white text-sm">© 2025 Fco Jose Masià Tormo</p>
-      <p className="text-white text-sm">Esta web está en continuo desarrollo</p>
     </footer>
   );
 };
