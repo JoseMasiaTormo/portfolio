@@ -18,12 +18,12 @@ const SkillsGroup = () => {
             />
             <SkillsPart
               title="Backend"
-              skillsTechs={["Python", "Java", "C++", "Node.js"]}
+              skillsTechs={["Python", "Java", "C++", "Node.js", "NumPy", "Flask"]}
               iconSkill={<IoMdSettings />}
             />
             <SkillsPart
               title="BBDD"
-              skillsTechs={["MySQL", "MongoDB", "PostgreSQL", "DynamoDB", "PowerBI"]}
+              skillsTechs={["MySQL", "MongoDB", "PostgreSQL", "DynamoDB", "PowerBI", "Pandas", "Matplotlib", "Seaborn"]}
               iconSkill={<FaDatabase />}
             />
             <SkillsPart
