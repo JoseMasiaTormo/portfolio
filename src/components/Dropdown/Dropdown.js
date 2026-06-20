@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 export default function Dropdown({
-  logo,
   title,
   description,
   image1,
@@ -11,7 +10,6 @@ export default function Dropdown({
   imgAlt2,
   imgAlt3,
   link,
-  logoName,
   techs = [],
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,6 +27,8 @@ export default function Dropdown({
     TSP3: "max-w-full w-[600px] h-auto",
     TSP: "w-[70px] h-[70px]",
     PIXEL: "w-[80px] h-[55px]",
+    PHPTM1: "w-[420px] max-w-[45%] h-auto",
+    PHPTM2: "w-[420px] max-w-[45%] h-auto",
   };
 
   const getImgClasses = (id) => `${customImgStyles[id] || ""}`;
@@ -40,7 +40,6 @@ export default function Dropdown({
         onClick={toggleDropdown}
       >
         <div className="flex items-center gap-4">
-          <img src={logo} alt="Logo" className={`${getImgClasses(`${logoName}`)} w-24 h-24 border-none`} />
           <h2 className="text-3xl font-semibold m-0">{title}</h2>
         </div>
         <div className="text-2xl pl-3 min-[380px]:flex hidden ">{isOpen ? " ▲" : " ▼"}</div>

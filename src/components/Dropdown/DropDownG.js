@@ -1,11 +1,7 @@
 import React from "react";
 import Dropdown from "./Dropdown";
-import logoKCs from "../../assets/images/logoKCs.png";
-import logoPixel from "../../assets/images/pixel-logo.png";
-import logoTSP from "../../assets/images/informacion.png";
-import KCPPPC from "../../assets/images/PPPC.png";
-import KCCarrPC from "../../assets/images/carritoPC.png";
-import KCPPMov from "../../assets/images/PPMov.png";
+import PHPTM1 from "../../assets/images/cap1php.png";
+import PHPTM2 from "../../assets/images/cap2php.png";
 import TV1 from "../../assets/images/tv-graphics1.png";
 import TV2 from "../../assets/images/tv-graphics2.png";
 import TV3 from "../../assets/images/tv-graphics3.png";
@@ -17,24 +13,18 @@ const DropDownG = () => {
   return (
     <div>
       <Dropdown
-        logo={logoKCs}
-        title={"KeyCap Specials"}
+        title={"PHP Task Manager"}
         description={
-          "Proyecto personal de del Grado Superior, es un concepto de proyecto, y los diseños se han hecho todos con Figma."
+          "Proyecto personal de un pequeño CRM para gestión de tareas, hecho completamente en PHP, integrando una base de datos SQLite y manejo de sesiones."
         }
-        image1={KCPPPC}
-        image2={KCCarrPC}
-        image3={KCPPMov}
-        imgAlt1={"KCPPPC"}
-        imgAlt2={"KCCarrPC"}
-        imgAlt3={"KCPPMov"}
-        link={
-          "https://www.figma.com/design/K7YEAR85ubF7qU2be5yLIb/Dise%C3%B1o-Final?node-id=1669-162202&m=dev&t=jBp77qW7SqBMmEVp-1"
-        }
-        techs={["Figma"]}
+        image1={PHPTM1}
+        image2={PHPTM2}
+        imgAlt1={"PHPTM1"}
+        imgAlt2={"PHPTM2"}
+        link={"https://github.com/JoseMasiaTormo/php_mini_crm"}
+        techs={["PHP", "SQLite", "HTML", "CSS"]}
       />
       <Dropdown
-        logo={logoPixel}
         title={"TV Graphics"}
         description={
           "Proyecto en el que estuve involucrado durante mis prácticas del Grado Superior, desarrollado totalmente en React."
@@ -59,10 +49,8 @@ const DropDownG = () => {
           "Jest",
           "Github Actions",
         ]}
-        logoName={"PIXEL"}
       />
       <Dropdown
-        logo={logoTSP}
         title={"TSP Soluciones"}
         description={
           "Este es un pequeño proyecto hecho para un familiar mezclando varias tecnologías básicas, lo hice como un ejercicio en el Grado Superior."
@@ -74,7 +62,6 @@ const DropDownG = () => {
         imgAlt2={"TSP2"}
         imgAlt3={"TSP3"}
         link={"https://github.com/JoseMasiaTormo/TSP-SOLUCIONES-PROJECT"}
-        logoName={"TSP"}
         techs={["HTML", "CSS", "JavaScript", "PHP", "MySQL"]}
       />
     </div>
