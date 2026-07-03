@@ -36,7 +36,7 @@ const SkillsGroup = () => {
             <h1 className="flex flex-row font-glitch text-4xl tracking-wider items-center justify-center gap-3 xl:flex-col xl:gap-0 xl:text-5xl">
               <span>SKILLS</span>
               <span>&</span>
-              <span className="text-[#5b21b9]">STACK</span>
+              <span className="text-accent2 [text-shadow:0_0_10px_rgba(214,70,159,0.4)]">STACK</span>
             </h1>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from "react";
 import Dropdown from "./Dropdown";
 import PHPTM1 from "../../assets/images/cap1php.png";
 import PHPTM2 from "../../assets/images/cap2php.png";
+import PHPTM3 from "../../assets/images/cap3php.png";
 import TV1 from "../../assets/images/tv-graphics1.png";
 import TV2 from "../../assets/images/tv-graphics2.png";
 import TV3 from "../../assets/images/tv-graphics3.png";
@@ -18,9 +19,11 @@ const DropDownG = () => {
           "Proyecto personal de un pequeño CRM para gestión de tareas, hecho completamente en PHP, integrando una base de datos SQLite y manejo de sesiones."
         }
         image1={PHPTM1}
-        image2={PHPTM2}
+        image2={PHPTM3}
+        image3={PHPTM2}
         imgAlt1={"PHPTM1"}
-        imgAlt2={"PHPTM2"}
+        imgAlt2={"PHPTM3"}
+        imgAlt3={"PHPTM2"}
         link={"https://github.com/JoseMasiaTormo/php_mini_crm"}
         techs={["PHP", "SQLite", "HTML", "CSS"]}
       />

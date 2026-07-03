@@ -12,7 +12,7 @@ const SkillsPart = ({ title, skillsTechs, iconSkill }) => {
         {skillsTechs.map((skill, index) => (
           <div
             key={index}
-            className="inline shadow shadow-black bg-[#2e2e2e] p-[5px] m-2.5 text-sm rounded-lg border border-[#6d2eff] border-solid font-mono"
+            className="inline bg-[#2e2e2e] p-[5px] m-2.5 text-sm rounded-lg border border-solid border-accent font-mono transition-all duration-200 shadow-[0_1px_4px_rgba(0,0,0,0.6),0_0_8px_rgba(124,92,246,0.22),inset_0_0_6px_rgba(124,92,246,0.12)] hover:border-accent2 hover:-translate-y-0.5 hover:shadow-[0_1px_4px_rgba(0,0,0,0.6),0_0_4px_rgba(214,70,159,0.55),0_0_18px_rgba(214,70,159,0.55),0_0_32px_rgba(214,70,159,0.28)]"
           >
             {skill}
           </div>

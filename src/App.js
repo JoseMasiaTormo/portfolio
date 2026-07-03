@@ -7,13 +7,13 @@ import SkillsGroup from "./components/Skills/SkillsGroup";
 function App() {
   return (
     <>
-      <body className="text-[#eaeaea] h-full">
+      <div className="text-[#eaeaea] h-full">
         <ProfesionalDesc />
         <SkillsGroup />
         <ExperienceGrid />
         <DropDownG />
         <FooterComp />
-      </body>
+      </div>
     </>
   );
 }

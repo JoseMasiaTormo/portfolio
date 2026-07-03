@@ -19,16 +19,12 @@ export default function Dropdown({
   const imgDrop = "max-w-full h-auto rounded-[12px] shadow-[0_2px_8px_rgba(0,0,0,0.3)] object-cover block mx-[10px]";
 
   const customImgStyles = {
-    KCPPMov: "max-w-[200px] rounded-[30px] w-[200px] h-auto",
-    KCPPPC: "max-w-full w-[600px] h-auto",
-    KCCarrPC: "max-w-full w-[600px] h-auto",
     TSP1: "max-w-full w-[600px] h-auto",
     TSP2: "max-w-full w-[600px] h-auto",
     TSP3: "max-w-full w-[600px] h-auto",
-    TSP: "w-[70px] h-[70px]",
-    PIXEL: "w-[80px] h-[55px]",
-    PHPTM1: "w-[420px] max-w-[45%] h-auto",
-    PHPTM2: "w-[420px] max-w-[45%] h-auto",
+    PHPTM1: "w-[300px] max-w-[45%] h-auto",
+    PHPTM2: "w-[480px] max-w-[90%] h-auto",
+    PHPTM3: "w-[240px] max-w-[45%] h-auto",
   };
 
   const getImgClasses = (id) => `${customImgStyles[id] || ""}`;
@@ -36,7 +32,7 @@ export default function Dropdown({
   return (
     <div className="w-full max-w-full bg-[linear-gradient(to_bottom,black,#61095a,black)] text-white box-border shadow-[0_4px_10px_rgba(0,0,0,0.4)] p-6 pb-0 transition-all duration-[400] ease-in-out overflow-hidden">
       <div
-        className="flex items-center justify-center cursor-pointer font-glitch tracking-[0.2em]"
+        className="flex items-center justify-center cursor-pointer font-glitch tracking-[0.2em] text-white [text-shadow:0_0_10px_rgba(214,70,159,0.4)]"
         onClick={toggleDropdown}
       >
         <div className="flex items-center gap-4">
@@ -57,21 +53,38 @@ export default function Dropdown({
               {techs.map((tech, index) => (
                 <span
                   key={index}
-                  className="inline shadow-[0_2px_8px_rgba(0,0,0,0.3)] bg-[rgb(44,44,44)] p-1 m-2 rounded-md border border-solid border-[#6d2eff]"
+                  className="inline bg-[rgb(44,44,44)] px-2 py-1 m-2 text-sm rounded-md border border-solid border-accent transition-all duration-200 shadow-[0_2px_8px_rgba(0,0,0,0.3),0_0_8px_rgba(124,92,246,0.22),inset_0_0_6px_rgba(124,92,246,0.12)] hover:border-accent2 hover:-translate-y-0.5 hover:shadow-[0_2px_8px_rgba(0,0,0,0.3),0_0_4px_rgba(214,70,159,0.55),0_0_18px_rgba(214,70,159,0.55),0_0_32px_rgba(214,70,159,0.28)]"
                 >
                   {tech}
-                  {index !== techs.length - 1}
                 </span>
               ))}
             </div>
           )}
-          <a href={link} className="text-white no-underline">
+          <a href={link} className="text-white no-underline transition-colors duration-200 hover:text-accent2">
             Ir al proyecto ⛓️‍💥
           </a>
           <div className="flex flex-wrap justify-center items-center my-4 gap-5">
-            <img src={image2} alt={imgAlt2} id={imgAlt2} className={`${imgDrop} ${getImgClasses(imgAlt2)}`} />
-            <img src={image3} alt={imgAlt3} id={imgAlt3} className={`${imgDrop} ${getImgClasses(imgAlt3)}`} />
-            <img src={image1} alt={imgAlt1} id={imgAlt1} className={`${imgDrop} ${getImgClasses(imgAlt1)}`} />
+            <img
+              src={image2}
+              alt={`${title} - captura 2`}
+              id={imgAlt2}
+              loading="lazy"
+              className={`${imgDrop} ${getImgClasses(imgAlt2)}`}
+            />
+            <img
+              src={image3}
+              alt={`${title} - captura 3`}
+              id={imgAlt3}
+              loading="lazy"
+              className={`${imgDrop} ${getImgClasses(imgAlt3)}`}
+            />
+            <img
+              src={image1}
+              alt={`${title} - captura 1`}
+              id={imgAlt1}
+              loading="lazy"
+              className={`${imgDrop} ${getImgClasses(imgAlt1)}`}
+            />
           </div>
         </div>
       </div>
