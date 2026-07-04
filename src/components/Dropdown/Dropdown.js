@@ -25,6 +25,9 @@ export default function Dropdown({
     PHPTM1: "w-[300px] max-w-[45%] h-auto",
     PHPTM2: "w-[480px] max-w-[90%] h-auto",
     PHPTM3: "w-[240px] max-w-[45%] h-auto",
+    SQ1: "w-[350px] max-w-full h-auto",
+    SQ2: "w-[350px] max-w-full h-auto",
+    SQ3: "w-[350px] max-w-full h-auto",
   };
 
   const getImgClasses = (id) => `${customImgStyles[id] || ""}`;

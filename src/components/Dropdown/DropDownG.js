@@ -9,6 +9,9 @@ import TV3 from "../../assets/images/tv-graphics3.png";
 import TSP1 from "../../assets/images/tsp1.png";
 import TSP2 from "../../assets/images/tsp2.png";
 import TSP3 from "../../assets/images/tsp3.png";
+import SQ1 from "../../assets/images/SP1.png";
+import SQ2 from "../../assets/images/SP2.png";
+import SQ3 from "../../assets/images/SP3.png";
 
 const DropDownG = () => {
   return (
@@ -26,6 +29,20 @@ const DropDownG = () => {
         imgAlt3={"PHPTM2"}
         link={"https://github.com/JoseMasiaTormo/php_mini_crm"}
         techs={["PHP", "SQLite", "HTML", "CSS"]}
+      />
+      <Dropdown
+        title={"Spotify Quiz"}
+        description={
+          "Web app fullstack construida con Vue 3, Node.js y SQLite. Integra la API de Spotify para explorar artistas, gestionar favoritos y generar quizzes musicales personalizados. Incluye autenticación con JWT, caché de peticiones y estilos con Tailwind CSS."
+        }
+        image1={SQ1}
+        image2={SQ2}
+        image3={SQ3}
+        imgAlt1={"SQ1"}
+        imgAlt2={"SQ2"}
+        imgAlt3={"SQ3"}
+        link={"https://github.com/JoseMasiaTormo/spotify-quiz-vue"}
+        techs={["Vue 3", "Node.js", "SQLite", "APIs", "Auth", "TailwindCSS"]}
       />
       <Dropdown
         title={"TV Graphics"}
