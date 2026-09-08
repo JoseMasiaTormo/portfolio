@@ -13,12 +13,12 @@ const SkillsGroup = () => {
           <div>
             <SkillsPart
               title="Frontend"
-              skillsTechs={["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular", "Tailwind"]}
+              skillsTechs={["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular", "Vue", "Tailwind"]}
               iconSkill={<FaCode />}
             />
             <SkillsPart
               title="Backend"
-              skillsTechs={["Python", "Java", "C++", "Node.js", "NumPy", "Flask"]}
+              skillsTechs={["Python", "Java", "C++", "Node.js", "NumPy", "Flask", "Express", "APIs", "JWT"]}
               iconSkill={<IoMdSettings />}
             />
             <SkillsPart
