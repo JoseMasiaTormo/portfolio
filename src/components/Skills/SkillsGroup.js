@@ -1,6 +1,6 @@
 import React from "react";
 import SkillsPart from "./SkillsPart";
-import { FaCode } from "react-icons/fa6";
+import { FaCode, FaBrain } from "react-icons/fa6";
 import { IoMdSettings } from "react-icons/io";
 import { FaDatabase } from "react-icons/fa";
 import { IoLibrary } from "react-icons/io5";
@@ -13,22 +13,60 @@ const SkillsGroup = () => {
           <div>
             <SkillsPart
               title="Frontend"
-              skillsTechs={["HTML", "CSS", "JavaScript", "TypeScript", "React", "Angular", "Vue", "Tailwind"]}
+              skillsTechs={[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "React Native",
+                "Angular",
+                "Vue",
+                "Tailwind",
+                "Tkinter",
+              ]}
               iconSkill={<FaCode />}
             />
             <SkillsPart
               title="Backend"
-              skillsTechs={["Python", "Java", "C++", "Node.js", "NumPy", "Flask", "Express", "APIs", "JWT"]}
+              skillsTechs={[
+                "Python",
+                "Java",
+                "C++",
+                "Node.js",
+                "Flask",
+                "Express",
+                "APIs",
+                "JWT",
+                "Cloudflare Workers",
+                "Sockets TCP",
+              ]}
               iconSkill={<IoMdSettings />}
             />
             <SkillsPart
               title="BBDD"
-              skillsTechs={["MySQL", "MongoDB", "PostgreSQL", "DynamoDB", "PowerBI", "Pandas", "Matplotlib", "Seaborn"]}
+              skillsTechs={["MySQL", "SQLite", "MongoDB", "PostgreSQL", "DynamoDB", "JSON"]}
               iconSkill={<FaDatabase />}
             />
             <SkillsPart
+              title="IA y Datos"
+              skillsTechs={[
+                "Gemini API",
+                "LangGraph",
+                "RAG",
+                "ChromaDB",
+                "Streamlit",
+                "NumPy",
+                "Pandas",
+                "Matplotlib",
+                "Seaborn",
+                "PowerBI",
+              ]}
+              iconSkill={<FaBrain />}
+            />
+            <SkillsPart
               title="Otros"
-              skillsTechs={["Docker", "AWS", "Git", "Socket.io", "Flux", "Jest", "AWS", "Figma", "Windows", "Linux"]}
+              skillsTechs={["Docker", "AWS", "Git", "Socket.io", "Flux", "Jest", "Vitest", "Figma", "Windows", "Linux"]}
               iconSkill={<IoLibrary />}
             />
           </div>

@@ -28,6 +28,12 @@ export default function Dropdown({
     SQ1: "w-[350px] max-w-full h-auto",
     SQ2: "w-[350px] max-w-full h-auto",
     SQ3: "w-[350px] max-w-full h-auto",
+    MAKO1: "w-[220px] max-w-[80%] h-auto",
+    MAKO2: "w-[220px] max-w-[80%] h-auto",
+    MAKO3: "w-[220px] max-w-[80%] h-auto",
+    CDImg1: "w-[300px] max-w-[90%] h-auto",
+    CDImg2: "w-[300px] max-w-[90%] h-auto",
+    CDImg3: "w-[300px] max-w-[90%] h-auto",
   };
 
   const getImgClasses = (id) => `${customImgStyles[id] || ""}`;
