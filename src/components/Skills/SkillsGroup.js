@@ -7,7 +7,7 @@ import { IoLibrary } from "react-icons/io5";
 
 const SkillsGroup = () => {
   return (
-    <div className="bg-[linear-gradient(to_bottom,_#000000_30%,_#4f177f_100%)]">
+    <div id="skills" className="bg-[linear-gradient(to_bottom,_#000000_30%,_#4f177f_100%)]">
       <div className="limits">
         <div className="flex flex-wrap justify-center">
           <div>

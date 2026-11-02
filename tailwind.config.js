@@ -6,6 +6,12 @@ module.exports = {
       fontFamily: {
         glitch: ["GlitchGoblin", "sans-serif"],
       },
+      keyframes: {
+        fadeIn: {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+      },
       colors: {
         accent: "#7c5cf6",
         accent2: "#d6469f",

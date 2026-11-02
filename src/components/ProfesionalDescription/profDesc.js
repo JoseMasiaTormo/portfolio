@@ -6,7 +6,7 @@ import { tooltipStyles } from "../../utils/styles";
 
 const ProfesionalDesc = () => {
   return (
-    <div className="w-full h-full bg-black bg-[radial-gradient(circle,_#ffffff_1.5px,_transparent_1.5px)] bg-[length:40px_40px] bg-[position:0_0,20px_20px] bg-repeat">
+    <div id="inicio" className="w-full h-full bg-black bg-[radial-gradient(circle,_#ffffff_1.5px,_transparent_1.5px)] bg-[length:40px_40px] bg-[position:0_0,20px_20px] bg-repeat">
       <div className="flex flex-col p-7 font-glitch lg:ml-7 lg:pt-10 xl:flex-row xl:justify-center xl:gap-28 xl:p-12 xl:m-0">
         <h1 className="flex flex-col text-7xl xl:w-fit tracking-wider [text-shadow:0_0_6px_rgba(124,92,246,0.5),0_0_18px_rgba(124,92,246,0.5),0_0_34px_rgba(124,92,246,0.22)]">
           <div className="flex flex-col md:flex-row md:gap-7 xl:flex-col xl:gap-0">

@@ -7,7 +7,7 @@ const ExperienceGrid = () => {
   const imageExpCoolmod =
     "object-cover w-full h-[200px] bg-[url('./assets/images/coolmod-logo.png')] bg-center bg-no-repeat";
   return (
-    <div className="bg-[linear-gradient(to_bottom,_#4f177f_30%,_black_100%)] opacity-100 z-[-2]">
+    <div id="experiencia" className="bg-[linear-gradient(to_bottom,_#4f177f_30%,_black_100%)] opacity-100 z-[-2]">
       <div className="max-w-[1200px] m-auto">
         <div className="flex flex-wrap justify-center gap-5 p-10">
           <SingleExperienceCard
