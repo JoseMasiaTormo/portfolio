@@ -13,6 +13,9 @@ import MAKO3 from "../assets/images/objetivos.png";
 import CDImg1 from "../assets/images/cdoor1.png";
 import CDImg2 from "../assets/images/cdoor2.png";
 import CDImg3 from "../assets/images/cdoor3.png";
+import CIFF1 from "../assets/images/ciff1.png";
+import CIFF2 from "../assets/images/ciff2.png";
+import CIFF3 from "../assets/images/ciff3.png";
 
 // Orden = orden en el slider. El primero es el que se ve al cargar la página.
 const projects = [
@@ -55,6 +58,16 @@ const projects = [
     link: "https://github.com/JoseMasiaTormo/codeDoor",
     linkLabel: "Ver en GitHub",
     techs: ["Python", "Tkinter", "Sockets TCP", "Regex", "JSON", "Linux"],
+  },
+  {
+    title: "CIFinder",
+    tag: "Escritorio · IA",
+    description:
+      "App de escritorio en Python que obtiene el CIF y la dirección de empresas a partir de su nombre, usando IA con búsqueda web (Claude, ChatGPT o Gemini). Procesa listas desde Excel, valida cada CIF con su algoritmo oficial y exporta los resultados en una hoja de cálculo formateada.",
+    images: [CIFF1, CIFF2, CIFF3],
+    link: "https://github.com/JoseMasiaTormo/cif_finder",
+    linkLabel: "Ver en GitHub",
+    techs: ["Python", "CustomTkinter", "APIs de IA", "openpyxl", "GitHub Actions"],
   },
   {
     title: "TV Graphics",
